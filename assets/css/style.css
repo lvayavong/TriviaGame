@@ -1,0 +1,14 @@
+#display {
+  font-family: monospace;
+  font-size: 120px;
+  color: green;
+
+  /* Typography */
+  text-align: center;
+
+  /* Visual */
+  background: black;
+}
+body { /* Visual */
+  background: yellow;
+}
