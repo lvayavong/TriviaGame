@@ -5,125 +5,52 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <title>Trivia Game</title>
 </head>
 
 <body>
   <div class="page-header">
-  <h1>Trivia Game <small>Answer the Questions within the time limit!</small></h1>
-</div>
-<div id="winAmount">
-
-</div>
-<div id="lossAmount">
-
-</div>
-
-     <div id="display">00:30</div>
-     <form>
-        <h3>Edgar Wright created the Cornetto film trilogy.</h3>
-       <div>
-         <input type="radio" id="contactChoice1"
-          name="contact" value="email">
-         <label for="contactChoice1">True</label>
-
-         <input type="radio" id="contactChoice2"
-          name="contact" value="phone">
-         <label for="contactChoice2">False</label>
-       </div>
-     </form>
-       <!-- <div>
-         <button type="submit">Submit</button>
-       </div> -->
-       <form>
-       <h3>Charlie Kauffman's directoral debut was Synecdoche, New York.</h3>
-      <div>
-        <input type="radio" id="contactChoice1"
-         name="contact" value="email">
-        <label for="contactChoice1">True</label>
-
-        <input type="radio" id="contactChoice2"
-         name="contact" value="phone">
-        <label for="contactChoice2">False</label>
-      </div>
-    </form>
-      <!-- <div>
-        <button type="submit">Submit</button>
-      </div> -->
-      <form>
-
-      <h3>Tim Burton directed Nightmare Before Christmas.</h3>
-     <div>
-       <input type="radio" id="contactChoice1"
-        name="contact" value="email">
-       <label for="contactChoice1">True</label>
-
-       <input type="radio" id="contactChoice2"
-        name="contact" value="phone">
-       <label for="contactChoice2">False</label>
-     </div>
-     <div>
-       <button type="submit">Submit</button>
-     </div>
-     </form>
-     <pre id="log">
-     </pre>
-     <!-- <form>
-       <p>Please select your preferred contact method:</p>
-       <div>
-         <input type="radio" id="contactChoice1"
-          name="contact" value="email">
-         <label for="contactChoice1">Email</label>
-
-         <input type="radio" id="contactChoice2"
-          name="contact" value="phone">
-         <label for="contactChoice2">Phone</label>
-
-         <input type="radio" id="contactChoice3"
-          name="contact" value="mail">
-         <label for="contactChoice3">Mail</label>
-       </div>
-       <div>
-         <button type="submit">Submit</button>
-       </div>
-     </form> -->
-
-
-<!-- <h3>Edgar Wright created the Cornetto film trilogy.</h3>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-  <div id="button1">
-    True
+    <h1>Trivia Game <small>Answer the Questions within the time limit!</small></h1>
   </div>
-</button>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-<div id="button2">
-    False
-</div>
-</button>
-<h3>Tim Burton directed Nightmare Before Christmas.</h3>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-<div id="button3">
-  True
-</div>
-</button>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-<div id="button4">
-  False
-</div>
-</button>
-<h3>Charlie Kauffman's directoral debut was Synecdoche, New York.</h3>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-<div id="button5">
-  True
-</div>
-</button>
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-<div id="button6">
-  False
-</div>
-</button> -->
+  <button onclick="timer()">Start</button>
+  <div id="winAmount">Win:
+
+  </div>
+  <div id="lossAmount">Lose:
+
+  </div>
+
+  <div id="display">00:30</div>
+
+  <form action="" method="">
+
+    <p>
+      <h3>Edgar Wright created the Cornetto film trilogy.</h3>
+      <input type="radio" name="quest1" id="edgar" value="1">True
+      <br/>
+      <input type="radio" name="quest1" value="2">False
+    </p>
+
+    <p>
+      <h3>Charlie Kauffman's directoral debut was Synecdoche, New York.</h3>
+      <input type="radio" name="quest2" id="charlie" value="1">True
+      <br/>
+      <input type="radio" name="quest2" value="2">False
+    </p>
+
+    <p>
+      <h3>Tim Burton directed Nightmare Before Christmas.</h3>
+      <input type="radio" name="quest3" id="tim" value="1">True
+      <br/>
+      <input type="radio" name="quest3" value="2">False
+    </p>
+
+    <input type="button" value="Submit" onclick="valid()" />
+
+  </form>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>
 
